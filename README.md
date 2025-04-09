@@ -58,21 +58,28 @@ Let's create wonders together with the power and simplicity of crewAI.
 
 ## 📦 Установка и запуск через Conda
 
-### 1. Клонируйте репозиторий
+### 1. clone this repo
 
 ```bash
 git clone https://github.com/aiken-kazin/ai-agent.git
+
+then go to the repo:
 cd ai-agent
 
+create an environment:
 conda create -n humanizer python=3.10 -y
+
+activate it:
 conda activate humanizer
 
-
+install required librbies
 pip install -r requirements.txt
 
+In  ai-agent folder (root):
 create `.env` file and save:
 OPENAI_API_KEY=your_openai_api_key
 
+Then run:
 streamlit run src/ai_agent_humanizer/streamlit.py
 ```
 
