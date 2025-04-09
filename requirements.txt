@@ -1,4 +1,3 @@
 crewai
-langchain 
-langchain-google-genai 
-google-generativeai
+streamlit
+dotenv

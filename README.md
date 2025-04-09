@@ -52,3 +52,26 @@ For support, questions, or feedback regarding the AiNews Crew or crewAI.
 - [Chat with our docs](https://chatg.pt/DWjSBZn)
 
 Let's create wonders together with the power and simplicity of crewAI.
+
+
+
+
+## 📦 Установка и запуск через Conda
+
+### 1. Клонируйте репозиторий
+
+```bash
+git clone https://github.com/your-username/ai_agent_humanizer.git
+cd ai_agent_humanizer
+
+conda create -n humanizer python=3.10 -y
+conda activate humanizer
+
+
+pip install -r requirements.txt
+
+OPENAI_API_KEY=your_openai_api_key
+
+streamlit run src/ai_agent_humanizer/streamlit.py
+```
+
