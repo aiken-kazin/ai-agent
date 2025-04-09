@@ -31,9 +31,6 @@ col1, col2 = st.columns([1, 1])
 with col1:
     check = st.button("✅ Check text")
 
-# Clear button
-with col2:
-    clear = st.button("🧹 Clear")
 
 # Handle check
 if check:
@@ -45,10 +42,6 @@ if check:
         st.success("✅ Done! Here's the humanized version:")
         st.text_area("Humanized Text:", value=result, height=250)
 
-# Handle clear
-if clear:
-    st.experimental_rerun()
 
 # Footer
 st.markdown("---")
-st.caption("✨ Built with Streamlit + GPT + CrewAI (or LangChain)")
