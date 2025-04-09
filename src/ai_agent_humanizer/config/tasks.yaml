@@ -1,0 +1,11 @@
+humanizer_task:
+  description: >
+    Take formal, robotic, or AI-generated text: {text}. Rewrite it so that it sounds natural 
+    and human-written while keeping all of the original meaning.
+  expected_output: >
+    A rewritten version of the input text that sounds like it was written by a 
+    real person — clear, conversational, and easy to read.
+  agent: text_humanizer
+  input_vars: ["text"]
+  agent: text_humanizer
+  return_output: true  
